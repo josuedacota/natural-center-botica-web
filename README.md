@@ -5,7 +5,7 @@ Aplicación web para la **exhibición y venta virtual de productos de medicina n
 Proyecto final de la asignatura **Desarrollo de Software I** — Facultad de Ingeniería, 2026.
 
 **Equipo:** 
-- Arroyave Saavedra Isabella - 2459623
+- Arroyave Isabella - 2459623
 - Cocoma Tascon Josue David - 2477087
 - Montaño Vergara Juan Diego - 2477334
 - Palomino Murcia Kevin Santiago - 2477200
