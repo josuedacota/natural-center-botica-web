@@ -51,4 +51,3 @@ public class CarritoServlet extends HttpServlet {
 			c.clear();
 		res.sendRedirect("carrito");
 	}
-}

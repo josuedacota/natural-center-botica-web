@@ -1,5 +1,4 @@
 package com.naturalcenter;
-
 import jakarta.servlet.*;
 import jakarta.servlet.annotation.WebServlet;
 import jakarta.servlet.http.*;
@@ -41,4 +40,3 @@ public class AuthServlet extends HttpServlet {
 		req.getSession().setAttribute("usuario", l.get(0));
 		res.sendRedirect("ADMIN".equals(l.get(0).get("rol")) ? "admin" : "catalogo");
 	}
-}

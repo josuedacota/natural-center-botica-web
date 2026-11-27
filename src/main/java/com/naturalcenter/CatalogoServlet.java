@@ -31,4 +31,4 @@ public class CatalogoServlet extends HttpServlet {
 		req.setAttribute("categorias", Db.query("SELECT * FROM categoria ORDER BY id"));
 		req.getRequestDispatcher("/WEB-INF/jsp/catalogo.jsp").forward(req, res);
 	}
-}
+

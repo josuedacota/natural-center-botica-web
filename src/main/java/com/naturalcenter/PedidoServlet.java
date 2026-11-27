@@ -69,4 +69,3 @@ public class PedidoServlet extends HttpServlet {
 			throw new ServletException(e);
 		}
 	}
-}

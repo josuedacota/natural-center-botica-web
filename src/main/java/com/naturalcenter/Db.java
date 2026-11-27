@@ -89,4 +89,3 @@ public class Db {
 			throw new RuntimeException(e);
 		}
 	}
-}
