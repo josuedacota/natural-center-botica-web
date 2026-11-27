@@ -1,0 +1,27 @@
+# Maven / compilados
+target/
+*.class
+*.war
+*.jar
+
+# IDEs
+.idea/
+*.iml
+.vscode/
+.settings/
+.project
+.classpath
+nbproject/
+nbactions.xml
+
+# Sistema operativo
+.DS_Store
+Thumbs.db
+
+# Logs y temporales
+*.log
+*.tmp
+
+# Credenciales locales (no subir contraseñas)
+.env
+*.env
