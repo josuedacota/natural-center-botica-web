@@ -1,0 +1,11 @@
+<%@ taglib prefix="c" uri="jakarta.tags.core" %><%@ taglib prefix="fmt" uri="jakarta.tags.fmt" %>
+<fmt:setLocale value="es_CO"/><c:set var="ctx" value="${pageContext.request.contextPath}"/>
+<!DOCTYPE html><html lang="es"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Natural Center + Botica</title><link rel="stylesheet" href="${ctx}/css/style.css"></head><body>
+<header class="top"><a class="logo" href="${ctx}/catalogo">🌿 Natural Center <span>+ Botica</span></a>
+<nav><a href="${ctx}/catalogo">Catálogo</a>
+<c:if test="${sessionScope.usuario.rol == 'ADMIN'}"><a href="${ctx}/admin">Administrar</a></c:if>
+<c:if test="${sessionScope.usuario.rol == 'CLIENTE'}"><a href="${ctx}/pedido">Mis pedidos</a></c:if>
+<a href="${ctx}/carrito">🛒 Carrito<c:if test="${not empty sessionScope.carrito}"> (${sessionScope.carrito.size()})</c:if></a>
+<c:choose><c:when test="${empty sessionScope.usuario}"><a href="${ctx}/login">Ingresar</a></c:when>
+<c:otherwise><a href="${ctx}/logout">Salir (${sessionScope.usuario.nombre})</a></c:otherwise></c:choose></nav></header><main>
